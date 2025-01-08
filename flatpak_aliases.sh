@@ -3,10 +3,10 @@
     # Comments ###################################################################################################
     # (K.I.S.S = Keep it short and simple (as short as possible!)- Group commands, document code, test as you go.#
     ##############################################################################################################
-    #C flatpak_aliases.sh: Search in the application path for currently installed flatpak applications ans create 
+    #C flatpak_aliases.sh: Search in the application path for currently installed flatpak applications and create 
     #C for every application an alias.
     #How it works:  ...
-    #Synopsis:      flatpak_aliases.sh no Options
+    #Synopsis:      flatpak_aliases.sh "show"
     #Date:          08.01.2025 
     #Version:       0.1a
     #Author:        zephyrus
@@ -18,11 +18,6 @@
     # Initialization of Variables ################################################################################
     #                                                                                                            #
     # version="0.1a"
-    #C the path in which the current script is "running"...
-    #C Name of the script file
-    # strSCR=nscpSH.sh
-    #C full qualified Path of the configfile strSCR.conf
-    #D strCONF=""/""".conf"
     #                                                                                                            #
     ##############################################################################################################
 
