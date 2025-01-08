@@ -3,7 +3,7 @@
     # Comments ###################################################################################################
     # (K.I.S.S = Keep it short and simple (as short as possible!)- Group commands, document code, test as you go.#
     ##############################################################################################################
-    #C flatpak_aliases.sh: Search in the application path for currently installed flatpak applications and create 
+    #C flatpak_aliases.sh: Search in the application path for currently installed flatpak applications ans create 
     #C for every application an alias.
     #How it works:  ...
     #Synopsis:      flatpak_aliases.sh no Options
@@ -47,30 +47,13 @@
             for flpAlias in "${strAlias[@]}";
             do
                 eval "${flpAlias}";
-                printf '%s\n' "${flpAlias}"; 
+                if [ "${1:-noshw}" == "show" ]; then
+                    printf '%s\n' "${flpAlias}"; 
+                fi
             done;
         }
 
     #                                                                                                            #
     ##############################################################################################################
 
-
-    # Runtime Configuration and Options (parse options, read configuration file etc.) ############################
-    #                                                                                                            #
-
-    #                                                                                                            #
-    ##############################################################################################################
-
-
-    # Sanity Check (are all values reasonable?) ##################################################################
-    #                                                                                                            #
-
-    #                                                                                                            #
-    ##############################################################################################################
-    
-
-    # Process Information (valculate, slice and dice lines, I/O...) ##############################################
-    #                                                                                                            #
-
-    #                                                                                                            #
-    ##############################################################################################################
+    cre-flp-aliases "$1";
