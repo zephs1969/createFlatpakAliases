@@ -1,5 +1,5 @@
 # createFlatpakAliases
-a CLI tool (bash script) to automatically create at runtime flatpak aliases  
+A CLI tool (bash script) to automatically create at runtime flatpak aliases  
 
 Usage:
 - Download the script and copy it into your "$PATH" - for example `~/.local/bin` or `~/.bin`
