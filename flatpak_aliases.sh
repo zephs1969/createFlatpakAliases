@@ -3,7 +3,7 @@
     # Comments ###################################################################################################
     # (K.I.S.S = Keep it short and simple (as short as possible!)- Group commands, document code, test as you go.#
     ##############################################################################################################
-    #C flatpak_aliases.sh: Search in the application path for currently installed flatpak applications ans create 
+    #C flatpak_aliases.sh: Search in the application path for currently installed flatpak applications and create 
     #C for every application an alias.
     #How it works:  ...
     #Synopsis:      flatpak_aliases.sh no Options
